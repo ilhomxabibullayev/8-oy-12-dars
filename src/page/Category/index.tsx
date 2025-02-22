@@ -191,7 +191,6 @@ const Category = () => {
                         </ul>
                         <button className='category__filter-btn'>Apply Filter</button>
                     </div>
-
                     <div className='category__content4'>
                         <div className='category__content5'>
                             <h2 className='category__title'>Casual</h2>
@@ -202,8 +201,6 @@ const Category = () => {
                                 </button>
                             </div>
                         </div>
-
-                        {/* Product cards */}
                         <div className='category__card'>
                             {currentProducts.length > 0 ? (
                                 currentProducts.map((product) => (
@@ -225,10 +222,7 @@ const Category = () => {
                                 <p>Loading products...</p>
                             )}
                         </div>
-
                         <span className='category__span'></span>
-
-                        {/* Pagination buttons */}
                         <div className='category__button'>
                             <button className='category__left-btn' onClick={handlePrevPage}>Previous</button>
                             <div className='category__button2'>
